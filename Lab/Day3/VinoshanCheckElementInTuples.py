@@ -8,5 +8,17 @@
 tuple_of_tuples = (('Red', 'White', 'Blue'), ('Green', 'Pink', 'Purple'), ('Orange', 'Yellow', 'Lime'))
 
 # Ask user for a color
-for x in tuple_of_tuples:
-    print (tuple_of_tuples(x)(1))
+user_color = input("Enter a color: ")
+
+# Logic
+found = False
+for group in tuple_of_tuples:
+    if user_color.capitalize() in group:
+        found = True
+        break
+
+# Display result
+if found:
+    print(f"{user_color} exists in the tuple.")
+else:
+    print(f"{user_color} does not exist in the tuple.")
