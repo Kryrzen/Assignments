@@ -14,7 +14,7 @@ def qualify_loan(income, employed, creditscore):
         print("\nUnfortunately you do not Qualify")
 
 def main():
-    #Get user inputs
+    # Get user inputs
     income = float(input("Enter How much you Earn: "))
     employed = float(input("Enter How long you worked for: "))
     creditscore = float(input("Enter your credit score: "))
